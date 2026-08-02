@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Xingchen He's academic homepage — geophysics, scientific computing, and open-source software.">
+  <meta name="author" content="Xingchen He">
+  <meta property="og:title" content="Xingchen He | Geophysics & Scientific Computing">
+  <meta property="og:description" content="Research, open-source software, and academic work in geophysics and scientific computing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chuan1937.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/99251452?v=4">
+  <title>Xingchen He | Geophysics & Scientific Computing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Homepage">XH</a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#software">Software</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Geophysics · Scientific Computing · Open Source</p>
+        <h1>Xingchen He</h1>
+        <p class="lead">
+          I develop computational methods and open-source software for seismic data analysis,
+          wave propagation, and high-performance geophysical computing.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#software">View software</a>
+          <a class="button button-secondary" href="https://github.com/Chuan1937" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+        </div>
+      </div>
+      <div class="portrait-wrap" aria-hidden="true">
+        <div class="portrait-halo"></div>
+        <img class="portrait" src="https://avatars.githubusercontent.com/u/99251452?v=4" alt="Portrait of Xingchen He">
+      </div>
+    </section>
+
+    <section id="about" class="section section-muted">
+      <div class="container split-layout">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Research through reproducible software</h2>
+        </div>
+        <div class="prose">
+          <p>
+            My work sits at the intersection of exploration geophysics, artificial intelligence,
+            and scientific computing. I am particularly interested in turning rigorous numerical
+            and signal-processing methods into clear, reusable research software.
+          </p>
+          <p>
+            This site is the central entry point for my research projects, publications, technical
+            notes, and software documentation. Project documentation remains maintained in each
+            project's existing repository and website.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section container">
+      <div class="section-heading">
+        <p class="section-kicker">Research</p>
+        <h2>Current interests</h2>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <span class="card-index">01</span>
+          <h3>Seismic AI</h3>
+          <p>Deep-learning methods for phase picking, first-motion polarity classification, and automated earthquake analysis.</p>
+        </article>
+        <article class="research-card">
+          <span class="card-index">02</span>
+          <h3>Wave Propagation & FWI</h3>
+          <p>Numerical simulation of elastic waves, forward modelling, and full-waveform inversion in complex media.</p>
+        </article>
+        <article class="research-card">
+          <span class="card-index">03</span>
+          <h3>Scientific Computing</h3>
+          <p>High-performance algorithms, large-scale three-dimensional data access, compression, and reproducible software systems.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="software" class="section section-dark">
+      <div class="container">
+        <div class="section-heading section-heading-light">
+          <p class="section-kicker">Open Source</p>
+          <h2>Selected software</h2>
+          <p>Representative public projects. Additional research software and documentation will be added progressively.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-row">
+            <div class="project-title">
+              <span class="project-number">01</span>
+              <div>
+                <h3>SeisPolarity</h3>
+                <p>Seismic first-motion polarity picking</p>
+              </div>
+            </div>
+            <p class="project-description">A unified framework for training, evaluating, and applying first-motion polarity models across multiple seismic datasets.</p>
+            <div class="project-links">
+              <a href="https://github.com/Chuan1937/SeisPolarity" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              <a href="https://seispolarity.readthedocs.io/" target="_blank" rel="noopener noreferrer">Docs ↗</a>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-title">
+              <span class="project-number">02</span>
+              <div>
+                <h3>CNCHASH</h3>
+                <p>Earthquake focal mechanisms</p>
+              </div>
+            </div>
+            <p class="project-description">A Python and Numba implementation of HASH for determining earthquake focal mechanisms from P-wave polarities.</p>
+            <div class="project-links">
+              <a href="https://github.com/Chuan1937/CNCHASH" target="_blank" rel="noopener noreferrer">Source ↗</a>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-title">
+              <span class="project-number">03</span>
+              <div>
+                <h3>QuakeCore</h3>
+                <p>AI agent for seismic workflows</p>
+              </div>
+            </div>
+            <p class="project-description">An AI-assisted framework for inspecting seismic files, performing signal analysis, and running phase-picking workflows through natural language.</p>
+            <div class="project-links">
+              <a href="https://github.com/Chuan1937/QuakeCore" target="_blank" rel="noopener noreferrer">Source ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <a class="all-projects" href="https://github.com/Chuan1937?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all repositories <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <div>
+        <p class="section-kicker">Contact</p>
+        <h2>Research and collaboration</h2>
+        <p>For research discussion, software questions, or collaboration, contact me through GitHub or email.</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://github.com/Chuan1937" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        <a href="mailto:chuanjun1978@gmail.com">Email <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year">2026</span> Xingchen He</p>
+      <p>Built with semantic HTML and CSS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
