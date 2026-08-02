@@ -104,7 +104,7 @@ nav a:focus-visible {
   max-height: 680px;
   object-fit: contain;
   background: #d9d3c7;
-  filter: grayscale(1) contrast(1.04);
+  filter: contrast(1.04);
   box-shadow: 0 22px 60px rgba(31, 25, 18, 0.12);
 }
 
