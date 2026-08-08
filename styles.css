@@ -137,6 +137,7 @@ nav a:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  transform: translateY(-14px);
 }
 
 h1,
@@ -152,7 +153,8 @@ h2 {
 }
 
 h1 {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  padding-top: 0.08em;
   font-size: clamp(3.4rem, 6.8vw, 6rem);
   font-weight: 700;
   line-height: 1;
