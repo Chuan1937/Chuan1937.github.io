@@ -91,28 +91,36 @@ nav a:focus-visible {
   padding: 72px 0 90px;
   display: grid;
   grid-template-columns: minmax(340px, 0.92fr) minmax(420px, 1.08fr);
-  align-items: center;
+  align-items: stretch;
   gap: clamp(54px, 8vw, 120px);
 }
 
 .memory-image {
   margin: 0;
+  position: relative;
+  align-self: start;
 }
 
 .memory-image img {
   width: 100%;
   max-height: 680px;
   object-fit: contain;
+  position: relative;
   background: #d9d3c7;
   filter: contrast(1.04);
   box-shadow: 0 22px 60px rgba(31, 25, 18, 0.12);
 }
 
 .memory-image figcaption {
-  margin-top: 18px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
   color: var(--muted);
   font-family: var(--serif);
   font-size: 0.88rem;
+  line-height: 1.4;
   letter-spacing: 0.08em;
   text-align: center;
 }
@@ -126,15 +134,9 @@ nav a:focus-visible {
 
 .poem-panel {
   max-width: 590px;
-}
-
-.identity {
-  margin: 0 0 38px;
-  color: var(--red);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 h1,
@@ -158,7 +160,7 @@ h1 {
 }
 
 .credit {
-  margin-bottom: 42px;
+  margin-bottom: 34px;
   color: var(--muted);
   font-family: var(--serif);
   font-size: 0.88rem;
@@ -171,11 +173,11 @@ h1 {
   border-left: 2px solid var(--red);
   font-family: var(--serif);
   font-size: clamp(1rem, 1.55vw, 1.15rem);
-  line-height: 2;
+  line-height: 1.9;
 }
 
 .poem p {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .poem p:last-child {
@@ -360,10 +362,6 @@ footer p {
 
   .memory-image img {
     max-height: 540px;
-  }
-
-  .identity {
-    margin-bottom: 26px;
   }
 
   h1 {

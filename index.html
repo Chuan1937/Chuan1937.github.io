@@ -37,7 +37,6 @@
       </figure>
 
       <div class="poem-panel">
-        <p class="identity">Xingchen He · Geophysics</p>
         <h1 id="poem-title">长城谣</h1>
         <p class="credit">潘孜农词，刘雪庵曲</p>
 
@@ -117,6 +116,14 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    window.addEventListener('load', function () {
+      var img = document.querySelector('.memory-image img');
+      var panel = document.querySelector('.poem-panel');
+      if (img && panel && img.offsetHeight > 0) {
+        panel.style.minHeight = img.offsetHeight + 'px';
+      }
+    });
   </script>
 </body>
 </html>
