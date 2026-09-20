@@ -10,8 +10,16 @@ The site serves as a central entry point for my research interests, open-source 
 
 - `index.html` — homepage content
 - `styles.css` — responsive visual design
+- `journal/index.html` — travel writing archive
+- `journal/YYYY-MM-DD-slug/index.html` — individual photo essays
+- `journal/journal.css` — archive and article layout
+- `assets/images/travel/` — optimized WebP images, grouped by article
 - `.nojekyll` — static GitHub Pages configuration
 
 ## Development
 
 The website uses plain HTML and CSS, with no build step or external framework required. Changes pushed to the publishing branch can be deployed directly through GitHub Pages.
+
+## Adding a journal entry
+
+Create a dated directory under `journal/` and place its `index.html` there. Store optimized images under the matching directory in `assets/images/travel/`. Add the entry to `journal/index.html` and update the featured entry in the homepage’s “行走与随笔” section. Keep the article’s original paragraph and image order; provide image dimensions and lazy loading.
