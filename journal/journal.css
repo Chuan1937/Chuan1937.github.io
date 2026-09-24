@@ -16,6 +16,7 @@
 .journal-heading > .journal-meta { margin-top: 38px; }
 .journal-epigraph { font-family: var(--serif); font-size: clamp(1.15rem, 3vw, 1.6rem); color: var(--red); line-height: 2.05; letter-spacing: .08em; margin: 28px 0 8px; padding: 22px 30px; border-left: 4px solid var(--red); }
 .journal-route { font-size: .85rem; color: var(--muted); margin: 24px 0 0; }
+.journal-views { font-size: .85rem; color: var(--muted); letter-spacing: .04em; margin: 10px 0 0; }
 .journal-layout { width: min(calc(100% - 48px), 960px); margin: 0 auto; display: grid; grid-template-columns: 135px minmax(0, 1fr); gap: 48px; padding: 48px 0 80px; }
 .journal-toc { position: sticky; top: 32px; align-self: start; }
 .journal-toc > p { color: var(--muted); font-size: .72rem; letter-spacing: .18em; }
